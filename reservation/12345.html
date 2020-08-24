@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: center;
+}
+
+ {
+  box-sizing: border-box;
+}
+
+.bg-img 
+{
+   background-image: url(background.jpg);
+   min-height: 1000px;
+
+   background-image: center ; 
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   align-self: center;
+   overflow-x:hidden;
+}
+
+/* Add styles to the form container */
+.container {
+ max-width: 400px;
+  border: 1px solid #ced4da ;
+  border-style: groove;
+  margin: 20px ;
+  padding: 16px ; 
+    position: absolute ;
+    font color: #ffffff ; 
+    background-color: white ; 
+    opacity: 80%;
+  align-self: center;
+  margin-left: 500px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=email],input[type=date],input[type=time],input[type=tel],input[type=special] {
+  width: 90%;
+  padding: 16px ;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 4px;
+
+}
+
+input[type=text]:focus, input[type=email];focus,input[type=date];focus,input[type=time];focus,input[type=tel]{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+select 
+{
+  width: 95%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+textarea
+{
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="bg-img">
+  <form action="reserv.php" method="POST" class="container" >
+    <h1>Online Reservation</h1>
+
+    <label for="uname"><b>Your Name</b></label>
+    <input type="text" placeholder="Enter Your Name" name="uname" required>
+
+    <label for="psw"><b>Email</b></label>
+    <input type="Email" placeholder="Enter Your E-Mail" name="mail" required>
+
+    <label for="pnum"><b>Phone Number</b></label>
+    <input type="tel" placeholder="Enter Your Number" name="number" required>
+
+    <label for="arrival"><b>Arrival Date</b></label>
+    <input type="date" name="arrival" required>
+
+    <label for="arrivaltime"><b>Arrival Time</b></label>
+    <input type="time"name="uatime" required>
+
+    <label for="Departure"><b>Departure Date</b></label>
+    <input type="date"name="ddate" required>
+
+    <label for="Departuret"><b>Departure Time</b></label>
+    <input type="time"name="dtime" required>
+
+    <label for="room"><b>Room Type</b></label>
+    <select id="room" name="room">
+       <option value="1">Single Room</option>
+         <option value="2">Double Room</option>
+         <option value="3">Sea View</option>
+     </select>
+
+     <label for="nights"><b>How Many Nights</b></label>
+         <select id="submit" name="nights">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="more">more</option></select>
+
+      <label for="adults"><b>How Many Adults</b></label>
+         <select id="adults" name="adults">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="more">more</option></select>
+
+      <label for="childs"><b>How Many Children</b></label>
+         <select id="childs" name="childs">
+         <option value="1">-</option>
+         <option value="2">1</option>
+         <option value="3">2</option>
+         <option value="4">3</option>
+         <option value="5">4</option>
+         <option value="5+">5+</option></select>
+
+         <label for="special"><b>Any Special Requrments</b></label>
+    <textarea type="text" name="textarea"></textarea>
+
+
+
+
+
+
+
+
+
+
+
+
+    <button type="submit" class="btn" required >Book</button>
+  </form>
+</div>

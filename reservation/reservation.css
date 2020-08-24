@@ -1,0 +1,83 @@
+height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: center;
+}
+
+ {
+  box-sizing: border-box;
+}
+
+.bg-img 
+{
+   background-image: url(background.jpg);
+   min-height: 1000px;
+
+   background-image: center ; 
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   align-self: center;
+   overflow-x:hidden;
+}
+
+/* Add styles to the form container */
+.container {
+ max-width: 400px;
+  border: 1px solid #ced4da ;
+  border-style: groove;
+  margin: 20px ;
+  padding: 16px ; 
+    position: absolute ;
+    font color: #ffffff ; 
+    background-color: white ; 
+    opacity: 80%;
+  align-self: center;
+  margin-left: 500px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=email],input[type=date],input[type=time],input[type=tel],input[type=special] {
+  width: 90%;
+  padding: 16px ;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 4px;
+
+}
+
+input[type=text]:focus, input[type=email];focus,input[type=date];focus,input[type=time];focus,input[type=tel]{
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+select 
+{
+  width: 95%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+textarea
+{
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.btn:hover {
+  opacity: 1;
+}
