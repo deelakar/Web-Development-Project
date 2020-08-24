@@ -169,3 +169,61 @@ th, td {
   box-shadow: lawngreen;
   
 }
+
+/slide show/
+.mySlides {display:none;
+  object-fit: cover;
+  width: 100%;
+  height: 1280px;
+  object-fit: cover;
+  text-align: justify;
+  
+}
+
+
+
+
+
+
+
+#imgcard{
+  background-repeat:   no-repeat;
+  background-size:     cover;
+  text-align: center;
+  height: 150px;
+  object-fit: cover;
+}
+
+#cardbodyheight{
+  height:200px;
+}
+
+
+
+
+/nav bar things/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+}
+
+li {
+  float:right;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color:greenyellow;
+}
+
+
+/* nav bar css over*/
